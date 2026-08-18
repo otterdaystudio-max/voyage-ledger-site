@@ -1,0 +1,67 @@
+:root {
+  --ink: #0f1c2e;
+  --card: #16273d;
+  --line: #24374f;
+  --text: #f4efe6;
+  --dim: #93a4b8;
+  --stamp: #e2653f;
+  --gold: #e0b055;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background: var(--ink);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard",
+    "Noto Sans KR", "Segoe UI", sans-serif;
+  line-height: 1.75;
+  -webkit-text-size-adjust: 100%;
+}
+.wrap { max-width: 720px; margin: 0 auto; padding: 56px 20px 96px; }
+
+.kicker {
+  font-size: 12px; letter-spacing: .22em; color: var(--dim);
+  text-transform: uppercase; margin-bottom: 10px;
+}
+h1 { font-size: 40px; line-height: 1.2; letter-spacing: -.02em; margin-bottom: 14px; }
+h2 {
+  font-size: 20px; margin: 44px 0 12px;
+  padding-bottom: 8px; border-bottom: 1px solid var(--line);
+}
+h3 { font-size: 16px; margin: 26px 0 6px; color: var(--gold); }
+p { margin-bottom: 12px; }
+p + p { margin-top: -2px; }
+ul { margin: 0 0 12px 20px; }
+li { margin-bottom: 6px; }
+a { color: var(--gold); }
+strong { color: #fff; }
+.lead { font-size: 18px; color: var(--dim); margin-bottom: 8px; }
+.dim { color: var(--dim); }
+.small { font-size: 14px; color: var(--dim); }
+
+.stamp {
+  display: inline-block; border: 2px solid var(--stamp); color: var(--stamp);
+  border-radius: 6px; padding: 5px 12px; font-size: 13px; font-weight: 700;
+  letter-spacing: .12em; transform: rotate(-2.5deg); margin-bottom: 22px;
+}
+.card {
+  background: var(--card); border: 1px solid var(--line);
+  border-radius: 14px; padding: 20px 22px; margin: 16px 0;
+}
+.card h3 { margin-top: 0; }
+.card p:last-child { margin-bottom: 0; }
+
+.mail {
+  display: inline-block; background: var(--stamp); color: #fff;
+  text-decoration: none; font-weight: 700;
+  border-radius: 999px; padding: 13px 26px; margin-top: 6px;
+}
+.nav { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--line); font-size: 14px; }
+.nav a { margin-right: 18px; }
+.en { margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--line); }
+.en, .en p, .en li { font-size: 14px; color: var(--dim); }
+.en h2 { font-size: 16px; color: var(--text); }
+
+@media (max-width: 520px) {
+  .wrap { padding: 40px 18px 72px; }
+  h1 { font-size: 30px; }
+}
